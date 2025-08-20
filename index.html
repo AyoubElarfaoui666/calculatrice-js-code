@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> App</title>
+    <link rel="stylesheet" href="./src/index.css">
+  </head>
+  <body class="bg-amber-300   flex justify-center items-center h-screen">
+    <button class="bg-white btnStart text-xl capitalize px-6 py-3.5 rounded-lg border border-white hover:bg-transparent cursor-pointer hover:text-white">start game</button>
+    <div class="bg-white hidden  min-w-[500px] p-8 rounded-lg">
+      <div class="txt text-right mb-4">
+        <div class="moves"><b>Moves : </b><span>0</span></div>
+        <div class="time"><b>Time : </b><span>00:00</span></div>
+      </div>
+      <div class="wrapper mb-4 gap-1 grid grid-cols-12 grid-rows-12 ">
+        
+      </div>
+      <div class="flex justify-center ">
+        <button class="capitalize cursor-pointer btnStop bg-black text-white px-5 py-2.5 rounded border border-black hover:bg-transparent  hover:text-black">stop game</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
