@@ -1,37 +1,3 @@
 @import "tailwindcss";
 
 
-.box {
-    position: relative;
-    transform-style: preserve-3d;
-    height: 120px;
-    transition: transform 0.5s;
-}
-
-
-
-.box .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    backface-visibility: hidden;
-}
-
-
-
-.box .back {
-    transform: rotateY(180deg);
-}
-
-.box.flipped {
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
-}
-
-

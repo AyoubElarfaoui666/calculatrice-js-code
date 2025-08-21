@@ -6,20 +6,18 @@
     <title> App</title>
     <link rel="stylesheet" href="./src/index.css">
   </head>
-  <body class="bg-amber-300   flex justify-center items-center h-screen">
-    <button class="bg-white btnStart text-xl capitalize px-6 py-3.5 rounded-lg border border-white hover:bg-transparent cursor-pointer hover:text-white">start game</button>
-    <div class="bg-white hidden  min-w-[500px] p-8 rounded-lg">
-      <div class="txt text-right mb-4">
-        <div class="moves"><b>Moves : </b><span>0</span></div>
-        <div class="time"><b>Time : </b><span>00:00</span></div>
+  <body class="flex justify-center bg-neutral-600 text-white  items-center h-screen text-center" >
+    <div class="ctn ">
+      <div class="time text-7xl mb-5 bg-black p-5 rounded-2xl font-bold">
+        00 : 00 : 00
       </div>
-      <div class="wrapper mb-4 gap-1 grid grid-cols-12 grid-rows-12 ">
-        
-      </div>
-      <div class="flex justify-center ">
-        <button class="capitalize cursor-pointer btnStop bg-black text-white px-5 py-2.5 rounded border border-black hover:bg-transparent  hover:text-black">stop game</button>
+      <div class="btns flex justify-between px-5 text-2xl">
+        <button class="stop bg-red-600 px-4 py-2 rounded-lg cursor-pointer">Stop</button>
+        <button class="start bg-green-600 px-4 py-2 rounded-lg cursor-pointer">Start</button>
+        <button class="reset bg-blue-600 px-4 py-2 rounded-lg cursor-pointer">Reset</button>
       </div>
     </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
